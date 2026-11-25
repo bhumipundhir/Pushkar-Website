@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pushkar Fair</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            width: 100%;
+            text-align: center;
+            color: #000000;
+        }
+
+        h1 {
+            color: #000000;
+            font-size: 2.5rem;
+        }
+        
+        .para {
+            color: #000000;
+            font-size: 1rem;
+            /* margin-bottom: 20px; */
+        }
+
+        .box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .con {
+            height: 190px;
+            width: 190px;
+            border-radius: 50%;
+            transition: transform 0.4s ease;
+        }
+
+        img {
+            border-radius: 50%;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border: 4px solid #d4af37;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+            transition: border-color 0.4s ease, filter 0.4s ease;
+        }
+
+        h3 {
+            margin-top: 15px;
+            color: #000000;
+            font-size: 1.1rem;
+            transition: color 0.4s ease;
+        }
+
+        .con:hover {
+            transform: translateY(-12px);
+        }
+
+        .con:hover img {
+            border-color: #fff6c6;
+            filter: brightness(1.1);
+        }
+
+        .con:hover h3 {
+            color: #d4af37;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Pushkar Fair</h1>
+    <p class="para">Camels | Culture | Colors</p>
+    
+    <div class="box">
+        <div class="con" id="c1">
+            <img src="https://www.thecountrysideresort.com/wp-content/uploads/2026/03/Best-Time-to-Enjoy-a-C-1200x675.jpg" alt="Decorated Camels">
+            <h3>Gentle Giants</h3>
+        </div>
+        
+        <div class="con" id="c2">
+            <img src="https://www.ercotravels.com/blog/wp-content/uploads/2026/07/Enjoy-Authentic-Rajasthani-Cultural-Performances.jpg" alt="Rajasthani Folk Dance">
+            <h3>Folk Music & Dances</h3>
+        </div>
+        
+        <div class="con" id="c3">
+            <img src="https://static.toiimg.com/photo/msid-49468161,width-96,height-65.cms" alt="Rajasthani Handicrafts">
+            <h3>Intricate Handicrafts</h3>
+        </div>
+
+        <div class="con" id="c4">
+            <img src="https://res.cloudinary.com/jaipurtaxi/image/upload/v1795167846/pushkar-lake-evening-aarti_xxieu5.jpg" alt="Pushkar Lake Aarti">
+            <h3>Kartik Purnima Pilgrimage</h3>
+        </div>
+    </div>
+
+</body>
+</html>

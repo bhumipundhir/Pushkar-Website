@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+    .body{
+        height: 100vh;
+        width: 100%;
+    }
+    .box{
+        height: 750px;
+        width: 90%;
+        /* border: 1px solid black; */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        text-align: center;
+        gap: 10px;
+        margin-left: 20px;
+        
+    }
+    .con{
+        height: 45%;
+        width: 40%;
+        border: 1px solid black;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+    .con:hover{
+        background-color: rgba(255, 248, 224, 0.801);
+        transform: scale(1.05);
+    }
+    img{
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 2px;
+        border-bottom-right-radius: 2px;
+        height: 55%;
+        width: 100%;
+    }
+    #bot{
+        margin-top: 40px;
+    }
+</style>
+
+<body>
+    <div class="box">
+        <h1>Rich Heritage of Temples in Pushkar</h1>
+        <div class="con">
+            <img src="https://www.rajasthanplaces.com/wp-content/uploads/2025/11/Jagatpita-Shri-Brahma-Mandir-1024x536.webp" alt="">
+            <h3>Shri Brahma Mandir</h3>
+            <p>The Brahma Temple in Pushkar, one of the few dedicated to Lord Brahma in India, is a must-visit. With its striking red spire and white marble structure.</p>
+        </div>
+            <div class="con">
+            <img src="https://www.rajasthantourplanner.com/images/pushkar-Savitri-Temple1.jpg" alt="">
+            <h3>Shree Savitri Mata Mandir</h3>
+            <p>Perched on Ratnagiri Hill, this temple dedicated to Goddess Savitri offers panoramic views of Pushkar and the surrounding desert.</p>
+        </div>
+        <div class="con" id="bot">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/32/72/58/50/caption.jpg?w=900&h=500&s=1" alt="">
+            <h3>Rangji Temple</h3>
+            <p>A unique temple blending South Indian and Rajasthani architectural styles, dedicated to Lord Rangji (a form of Vishnu).</p>
+        </div>
+        <div class="con" id="bot">
+            <img src="https://www.optimatravels.com/images/pushkar-images/varaha-temple-pushkar.jpg" alt="">
+            <h3>Varaha Temple</h3>
+            <p>An ancient temple dedicated to Lord Vishnu's boar incarnation. It features beautiful carvings and is one of Pushkar's oldest and most architecturally significant temples.</p>
+        </div>
+    </div>
+</body>
+</html>

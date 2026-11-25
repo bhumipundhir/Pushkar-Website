@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body h1, body h3{
+            text-align: center;
+        }
+        .con{
+            height: 440px;
+            /* border: 1px solid black;*/
+            display: flex;
+            justify-content: space-evenly;
+            text-align: center;
+            gap: 4px;
+        }
+        .left{
+            height: 100%;
+            width: 23%;
+            border-radius: 22px;
+        }
+        img:hover{
+            box-shadow: 0 5px 0 orange;
+            transition: 0.1s ease;
+            transform: scale(1.05);
+        }
+        .center{
+            height: 100%;
+            width: 50%;
+        }
+        .top{
+            border-radius: 22px;
+            height: 48%;
+            width: 100%;
+        }
+        .bottom{
+            border-radius: 22px;
+            margin-top: 16px;
+            height: 48%;
+            width: 100%;
+        }
+        .right{
+            border-radius: 22px;
+            height: 100%;
+            width: 23%;
+        }
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 22px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Food In Pushkar</h1>
+    <h3>Traditional | Delicious | Unforgettable</h3>
+    <div class="con">
+        <div class="left"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYo3Zqm3QylVOnCh2LarN_85bveabwU59HTqSN8_PuCQ&s=10" alt=""></div>
+        <div class="center">
+            <div class="top"><img src="https://www.secondrecipe.com/wp-content/uploads/2021/02/dal-pakwaan-2021-2-scaled.jpg" alt=""></div>
+            <div class="bottom"><img src="https://blog.swiggy.com/wp-content/uploads/2024/06/Image-5_-Aloo-Kachori-1024x538.png" alt=""></div>
+        </div>
+        <div class="right"><img src="https://i.pinimg.com/originals/52/5f/00/525f00d9b77e865fcac313443292e3fa.jpg" alt=""></div>
+    </div>
+</body>
+</html>

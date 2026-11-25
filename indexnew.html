@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+</head>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        height: 100vh;
+    }
+    header{
+        height: 20%;
+        background: linear-gradient(to right, rgba(251, 84, 18, 0.908), rgb(239, 181, 35), rgba(251, 84, 18, 0.908) );
+        color: whitesmoke;
+        text-align: center;
+        font-size: 3rem;
+        line-height: 160px;
+    }
+    section{
+        display: flex;
+        height: 70%;
+        width: 100%;
+        background-color: azure;
+        /* background: linear-gradient(145deg ,rgb(255, 198, 188), rgb(255, 162, 204)); */
+    }
+    /* .bulb{
+        height: 10%;
+    }
+    .fa-lightbulb{
+
+    }
+    .fa-lightbulb:hover{
+        color: gold;
+    } */
+    .left{
+        height: 100%;
+        width: 20%;
+    }
+    .center{
+        height: 100%;
+        width: 60%;
+    }
+    .right{
+        height: 100%;
+        width: 20%;
+        text-align: center;
+    }
+    .right p, .right h3{
+        margin: 20px 0;
+    }
+    a{
+        color: aliceblue;
+        text-decoration: none;
+    }
+    ul{
+        height: 50%;
+        width: 100%;
+    }
+    li{
+        height: 20%;
+        width: 100%;
+        background-color: rgb(255, 149, 0)
+        ;
+        color: aliceblue;
+        text-align: center;
+        font-size: medium;
+        line-height: 3;
+        border: 2px solid white;
+        font-size: large;
+        margin-top: 8px;
+        transition: 0.3 ease;
+        border-radius: 50px;
+    }
+    li:hover{
+        background-color: rgb(255, 183, 0);
+        box-shadow: 0 10px 30px #d9a7c7
+    }
+    footer{
+        display: flex;
+        text-align: center;
+        justify-content: space-evenly;
+        height: 10%;
+        background-color: rgb(241, 122, 37);
+        /* background: linear-gradient(to right, rgba(251, 84, 18, 0.908), rgb(239, 181, 35), rgba(251, 84, 18, 0.908) ); */
+        /* background: linear-gradient(to right, rgba(232, 66, 0, 0.908), rgb(239, 181, 35)); */
+        color: aliceblue;
+        text-align: center;
+        padding: 25px;
+    }
+    i:hover{
+        transform: scale(1.5);
+    }
+</style>
+
+<body>
+    <header><h1>Pushkar</h1></header>
+    <!-- <div class="bulb">
+        <i class="fa fa-lightbulb fa-3x fa-"></i>
+    </div> -->
+    <section>
+        <div class="left">
+            <ul>
+                <a href="home.html" target="home"><li>Home</li></a>
+                <a href="temple.html" target="home"><li>Temples</li></a>
+                <a href="food.html" target="home"><li>Foods</li></a>
+                <a href="fair.html" target="home"><li>Pushkar Fair</li></a>
+                <a href="about.html" target="home"><li>About Us</li></a>
+            </ul>
+        </div>
+        <div class="center">
+            <iframe src="home.html" frameborder="0" height="100%" width="100%" name="home"></iframe>
+        </div>
+        <div class="right">
+            <h3>How to Reach</h3>
+            <h4>What?</h4>
+            <p>Pushkar is the city of Temples</p>
+            <h4>Where?</h4>
+            <p>Located in Ajmer Rajasthan</p>
+            <h4>How?</h4>
+            <p>You can Reach by the air, by rail or by car</p>  
+        </div>
+    </section>  
+    <footer>    
+        <p>Pushkar Raj. 2026</p>
+        <div class="icon">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-youtube"></i>
+        </div>
+    </footer>  
+</body>
+</html>
