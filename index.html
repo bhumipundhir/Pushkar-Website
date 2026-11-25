@@ -98,9 +98,61 @@
     i:hover{
         transform: scale(1.5);
     }
+
+    .lamp{
+    position: absolute;
+    margin-top: 0;
+    margin-left: 45px;          
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }   
+    .lamp:hover{ animation: swing 1s ease-in-out infinite; }
+
+    @keyframes swing{
+        25%{ rotate: 6deg; }
+        75%{ rotate: -6deg; }
+    }
+    .wire{
+        width: 3px;
+        height: 55px;
+        background: #333;
+    }
+    .shade{
+        width: 90px;
+        height: 45px;
+        background: #222;
+        clip-path: polygon(30% 0, 70% 0, 100% 100%, 0 100%);
+    }
+    .bulb{
+        width: 26px;
+        height: 14px;
+        margin-top: -4px;
+        background: #777;
+        border-radius: 0 0 20px 20px;
+        transition: 0.4s;
+    }
+    #lamp-toggle:checked ~ .lamp .bulb{
+        background: #fff6b0;
+        box-shadow: 0 0 20px 10px gold, 0 0 60px 25px rgba(255, 215, 0, 0.6);
+    }
+
 </style>
 
 <body>
+
+    <div class="lamp">
+        <span class="wire"></span>
+        <span class="shade"></span>
+        <span class="bulb"></span>
+    </div>
+
+    <div class="rays">
+        <div class="beam"></div>
+        <div class="dim"></div>
+        <div class="spot"></div>
+    </div>
+
     <header><h1>Pushkar</h1></header>
     <!-- <div class="bulb">
         <i class="fa fa-lightbulb fa-3x fa-"></i>
@@ -108,15 +160,15 @@
     <section>
         <div class="left">
             <ul>
-                <a href="home.html" target="home"><li>Home</li></a>
-                <a href="temple.html" target="home"><li>Temples</li></a>
-                <a href="food.html" target="home"><li>Foods</li></a>
-                <a href="fair.html" target="home"><li>Pushkar Fair</li></a>
-                <a href="about.html" target="home"><li>About Us</li></a>
+                <a href="pages/home.html" target="home"><li>Home</li></a>
+                <a href="pages/temple.html" target="home"><li>Temples</li></a>
+                <a href="pages/food.html" target="home"><li>Foods</li></a>
+                <a href="pages/fair.html" target="home"><li>Pushkar Fair</li></a>
+                <a href="pages/about.html" target="home"><li>About Us</li></a>
             </ul>
         </div>
         <div class="center">
-            <iframe src="home.html" frameborder="0" height="100%" width="100%" name="home"></iframe>
+            <iframe src="pages/home.html" frameborder="0" height="100%" width="100%" name="home"></iframe>
         </div>
         <div class="right">
             <h3>How to Reach</h3>
